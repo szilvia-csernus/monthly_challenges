@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ month_name|title }} Challenge</title>
+</head>
+<body>
+    <!-- the 'title' filter capitalizes the first letter of each word -->
+    <h1>{{ month_name|title }} Challenge</h1> 
+    {% if text is not None %}
+        <h2>{{ text }}</h2>
+    {% else %}
+        <h2>No challenge for this month.</h2>
+    {% endif %}
+    
+</body>
+</html>
